@@ -116,7 +116,7 @@ public class HttpUtil {
         return Collections.max(allUserPosts, Comparator.comparingInt(Post::getId));
     }
 
-    public static List<ToDoList> sendGetListOfOpenTasksForUser(User user)
+    public static List<ToDoList> sendGetListOfOpenTasks(User user)
             throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(String.format("%s%s/%d%s", HOST, END_POINT_USERS, user.getId(), T0_DO)))

@@ -65,7 +65,7 @@ public class HttpClientDemo {
 
         //Task 3
         System.out.println("\nTask 3\n" + "Uncompleted tasks: ");
-        List<ToDoList> allOpenTasks = HttpUtil.sendGetListOfOpenTasksForUser(createdUser);
+        List<ToDoList> allOpenTasks = HttpUtil.sendGetListOfOpenTasks(createdUser);
         allOpenTasks.forEach(System.out::println);
     }
 }
